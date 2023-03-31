@@ -51,15 +51,16 @@ const Container = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px 20px;
+    padding: 10px 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 
 `
 const Icon = styled.img`
-    width: 135px;
-    height: 30px;
+    width: 110px;
+    height: 25px;
 `
 
 const MenuBar = styled.div`
@@ -70,7 +71,7 @@ const MenuBar = styled.div`
 
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         padding: 0 5px;
     }
@@ -87,7 +88,7 @@ const Rightmenu = styled.div`
 
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         padding: 0 3.5px;
     }
@@ -109,7 +110,7 @@ const BurgerNav = styled.div`
     padding: 15px;
     display: flex;
     flex-direction: column;
-    text-aling: start;
+    text-align: start;
     justify-content: flex-start;
     transform: ${props => props.show ? "translateX(0)" : "translateX(100%)"};
     transition: 0.2s;
